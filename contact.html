@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Contact Us</title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <div class="container">
+        <header>
+            <h1>Contact us</h1>
+        </header>
+        <hr>
+        <main>
+            <form class="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <h1>U kunt contact met ons opnemen met onderstaand formulier:</h1>
+                <label for="username">Naam:</label><br>
+                <input type="text" id="username" name="username" size="25"><br><br>
+                <label for="email">Emailadres:</label><br>
+                <input type="email" id="email" name="email" size="25"><br><br>
+                <label for="telefoonnummer">Telefoonnummer:</label><br>
+                <input type="tel" id="telefoonnummer" name="telefoonnummer" value="o6-"><br><br>
+                <label for="leeftijd">Leeftijd:</label><br>
+                <input type="number" id="leeftijd" name="leeftijd"><br><br>
+                <label for="geboortedatum">Geboortedatum:</label><br>
+                <input type="date" id="geboortedatum" name="geboortedatum" size="6"><br><br>
+                <p>Geslacht:</p>
+                <group class="inline-radio">
+                    <label for="man" class="man">Man</label><br>
+                    <input type="radio" name="geslacht:" value="Man"><br><br>
+                    <label for="vrouw" class="vrouw">Vrouw</label><br>
+                    <input type="radio" name="geslacht:" value="Vrouw"><br><br>
+                    <label for="anders" class="anders">Anders</label>
+                    <input type="radio" name="geslacht:" value="Anders"><br><br>
+                </group>
+                <p>Favoriete Gerecht:</p>
+                <group class="inline-checkbox">
+                    <label for="Favoriete Gerecht1:" class="italiaans">Italiaans</label><br>
+                    <input type="checkbox" name="Favoriete Gerecht1:" value="Italiaans"><br><br>
+                    <label for="Favoriete Gerecht2:" class="spaans">Spaans</label><br>
+                    <input type="checkbox" name="Favoriete Gerecht2:" value="Spaans"><br><br>
+                    <label for="Favoriete Gerecht3:" class="arabisch">Arabisch</label><br>
+                    <input type="checkbox" name="Favoriete Gerecht3:" value="Arabisch"><br><br>
+                </group>
+                <label for="kleur">Favoriete Kleur:</label><br>
+                <input type="color" id="kleur" name="kleur"><br><br>
+                <label for="biografie">Biografie:</label><br>
+                <textarea id="biografie" name="biografie" cols="50"></textarea><br><br>
+                <label for="file">Upload Bestand:</label><br>
+                <input type="file" id="file" name="file"><br><br>
+                <label for="url">Link naar je website:</label><br>
+                <input type="url" id="url" name="url" value="https://www."><br><br>
+                <group class="inline-sendbutton">
+                    <div data-netlify-recaptcha="true"></div>
+                    <input type="reset" id="reset" name="reset"><br><br>
+                    <input type="submit" id="submit" name="submit"><br><br>
+                </group>
+            </form>
+
+
+        </main>
+        <footer>
+            <nav class="button">
+                <a href="index.html">
+                    <p>Back to the mainpage...</p>
+                </a>
+            </nav>
+        </footer>
+    </div><!-- Container DIV-->
+</body>
+
+</html>
